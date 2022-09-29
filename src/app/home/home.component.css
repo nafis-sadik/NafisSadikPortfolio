@@ -1,0 +1,28 @@
+.home-bg{
+  height: 100vh;
+
+  /* Background Settings */
+  background-image: url('/assets/Cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#Content{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: black;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+#Content .text-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
