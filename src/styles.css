@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-.page-content{
-  max-width: 90%;
-  margin-left: 10%;
-  padding: 0;
+@font-face {
+  font-family: ReemKufiFun;
+  src: url(assets/fonts/ReemKufiFun-VariableFont_wght.ttf) format('truetype');
+}
+body {
+  font-family: ReemKufiFun !important;
+  text-space: 1rem;
 }

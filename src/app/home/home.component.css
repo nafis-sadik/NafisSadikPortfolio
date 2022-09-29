@@ -1,28 +1,46 @@
 .home-bg{
   height: 100vh;
-
-  /* Background Settings */
-  background-image: url('/assets/Cover.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url('/assets/home-cover.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#Content{
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: white;
-  background-color: black;
-  opacity: .8;
-  width: 100%;
+.home-bg::before{
+  content: '';
   height: 100%;
-  text-align: left;
+  width: 100%;
+  position: absolute;
+  background: #12171b;
+  opacity: .4;
 }
 
-#Content .text-container{
+.text-container{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  opacity: 1;
+  text-align: center;
+}
+
+.text-container h1{
+  font-size: 4rem;
+}
+
+.text-container span{
+  font-size: 2rem;
+}
+
+
+.pro-pic{
+  height: 25vh;
+  margin-bottom: 3vh;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+.pro-pic:hover{
+  transition: 0.5s;
+  border: 3px solid cornflowerblue;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
 }
