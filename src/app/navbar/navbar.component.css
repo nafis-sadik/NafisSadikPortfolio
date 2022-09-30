@@ -8,7 +8,7 @@
   font-size: 2rem;
   width: 10%;
   background-color: rgba(0, 0, 0, 0.5);
-  min-width: 180px;
+  min-width: 150px;
 }
 
 .nav-link-container{
@@ -23,15 +23,14 @@
   color: white;
   width: 100%;
   height: 8vh;
+  margin-bottom: 5px;
   border-bottom: 2px solid transparent;
 }
 
 .navbar-links:hover{
   transition: .5s;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.4);
   color: cornflowerblue;
-  border-bottom: 2px solid cornflowerblue;
 }
 
 .navbar-links:hover::after{
@@ -41,7 +40,13 @@
   color: white;
   display: block;
   position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: black;
+  border-left: 1px solid cornflowerblue;
+  border-radius: 5%;
+  max-width: 50% !important;
 }
 
 /*[data-tooltip].navbar-links:hover::after {*/
