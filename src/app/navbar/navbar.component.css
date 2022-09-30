@@ -41,23 +41,21 @@
   display: block;
   position: relative;
   left: 50%;
-  top: 50%;
+  top: 25%;
   transform: translate(-50%, -50%);
   background-color: black;
-  border-left: 1px solid cornflowerblue;
+  border: 1px solid cornflowerblue;
   border-radius: 5%;
   max-width: 50% !important;
 }
 
-/*[data-tooltip].navbar-links:hover::after {*/
-/*  content: attr(data-tooltip);*/
-/*  font-size: 1rem;*/
-/*  background: black;*/
-/*  padding: 0.25rem 1.25rem;*/
-/*}*/
-
-/*[data-tooltip] {*/
-/*  position: relative;*/
-/*  display: inline-block;*/
-/*  top: 100%;*/
-/*}*/
+#ExpansionBtn{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  border-radius: 0 !important;
+  color: white;
+}

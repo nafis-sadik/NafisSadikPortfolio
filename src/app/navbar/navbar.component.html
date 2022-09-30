@@ -1,5 +1,5 @@
-<section id="Navbar">
-  <div class="nav-link-container">
+<section id="Navbar" class="animate__animated" [ngClass]="expanded?'animate__slideInLeft':'animate__slideOutLeft'">
+  <div class="nav-link-container nav-bg">
     <div href="home" class="navbar-links" data-tooltip="Home">
       <i class="bi bi-house-fill"></i>
     </div>
@@ -19,5 +19,7 @@
       <i class="bi bi-envelope-fill"></i>
     </div>
   </div>
-  <div class="nav-bg"></div>
+  <button class="btn" id="ExpansionBtn" (click)="toggleNavbarExpansion()">
+    <i class="bi bi-list"></i>
+  </button>
 </section>

@@ -31,16 +31,20 @@
   font-size: 2rem;
 }
 
-
 .pro-pic{
   height: 25vh;
   margin-bottom: 3vh;
   border-radius: 100%;
   border: 3px solid white;
 }
+
 .pro-pic:hover{
   transition: 0.5s;
   border: 3px solid cornflowerblue;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   cursor: pointer;
+}
+
+.expand-btn{
+  font-size: 5rem;
 }

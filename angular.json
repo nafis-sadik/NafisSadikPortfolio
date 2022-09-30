@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css",
               "bootstrap/dist/css/bootstrap.min.css",
-              "bootstrap-icons/font/bootstrap-icons.css"
+              "bootstrap-icons/font/bootstrap-icons.css",
+              "animate.css/animate.min.css"
             ],
             "scripts": [
               "bootstrap/dist/js/bootstrap.min.js"
@@ -96,7 +97,8 @@
             "styles": [
               "src/styles.css",
               "bootstrap/dist/css/bootstrap.min.css",
-              "bootstrap-icons/font/bootstrap-icons.css"
+              "bootstrap-icons/font/bootstrap-icons.css",
+              "animate.css/animate.min.css"
             ],
             "scripts": [
               "bootstrap/dist/js/bootstrap.min.js"
