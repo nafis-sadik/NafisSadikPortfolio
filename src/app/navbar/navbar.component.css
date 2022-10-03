@@ -1,23 +1,33 @@
-#Navbar {
+/*Contains Navbar and Expansion button*/
+#NavbarContainer {
+  transition: 1s;
   top: 0;
   left: 0;
   height: 100vh;
-  position: fixed;
-  border-right: 2px solid black;
+  position: absolute;
   text-align: center;
   font-size: 2rem;
-  width: 10%;
-  background-color: rgba(0, 0, 0, 0.5);
-  min-width: 150px;
 }
 
-.nav-link-container{
+/*Original Navbar Section*/
+#Navbar{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%;
+  width: 150px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-right: 2px solid black;
 }
 
+/*Link wrapper inside navbar*/
+.nav-link-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Individual Links*/
 .navbar-links{
   display: block;
   color: white;
@@ -25,16 +35,19 @@
   height: 8vh;
   margin-bottom: 5px;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
 }
 
+/*Tooltip activator*/
 .navbar-links:hover{
   transition: .5s;
   cursor: pointer;
   color: cornflowerblue;
 }
 
+/*Tooltip*/
 .navbar-links:hover::after{
-  transition: .5s;
+  transition: 1s;
   content: attr(data-tooltip);
   font-size: 1rem;
   color: white;
@@ -46,16 +59,28 @@
   background-color: black;
   border: 1px solid cornflowerblue;
   border-radius: 5%;
-  max-width: 50% !important;
+  max-width: 50%;
 }
 
 #ExpansionBtn{
-  position: absolute;
+  transition: 1s;
+  position: relative;
   top: 0;
-  left: 100%;
+  left: 150px;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   border-radius: 0 !important;
   color: white;
+}
+
+.navbarSlideOutLeft{
+  transition: 1s;
+  left: -150px!important;
+  content: 'X';
+}
+
+.btnSlideOutLeft{
+  transition: 1s;
+  left: 0;
 }

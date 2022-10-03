@@ -1,25 +1,28 @@
-<section id="Navbar" class="animate__animated" [ngClass]="expanded?'animate__slideInLeft':'animate__slideOutLeft'">
-  <div class="nav-link-container nav-bg">
-    <div href="home" class="navbar-links" data-tooltip="Home">
-      <i class="bi bi-house-fill"></i>
-    </div>
-    <div href="about" class="navbar-links" data-tooltip="About">
-      <i class="bi bi-person-fill"></i>
-    </div>
-      <div href="resume" class="navbar-links" data-tooltip="Resume">
-      <i class="bi bi-file-earmark-person-fill"></i>
-    </div>
-      <div href="portfolio" class="navbar-links" data-tooltip="Portfolio">
-      <i class="bi bi-briefcase-fill"></i>
-    </div>
-      <div href="blog" class="navbar-links" data-tooltip="Blog">
-      <i class="bi bi-journal-code"></i>
-    </div>
-      <div href="contact" class="navbar-links" data-tooltip="Contact">
-      <i class="bi bi-envelope-fill"></i>
+<section id="NavbarContainer" [ngClass]="expanded?'':'navbarSlideOutLeft'">
+  <div id="Navbar" class="nav-bg">
+    <div class="nav-link-container">
+      <a href="/" class="navbar-links" data-tooltip="Home" (click)="toggleNavbarExpansion()">
+        <i class="bi bi-house-fill"></i>
+      </a>
+      <a href="/about" class="navbar-links" data-tooltip="About" (click)="toggleNavbarExpansion()">
+        <i class="bi bi-person-fill"></i>
+      </a>
+      <a href="/resume" class="navbar-links" data-tooltip="Resume" (click)="toggleNavbarExpansion()">
+        <i class="bi bi-file-earmark-person-fill"></i>
+      </a>
+      <a href="/portfolio" class="navbar-links" data-tooltip="Portfolio" (click)="toggleNavbarExpansion()">
+        <i class="bi bi-briefcase-fill"></i>
+      </a>
+      <a href="/blog" class="navbar-links" data-tooltip="Blog" (click)="toggleNavbarExpansion()">
+        <i class="bi bi-journal-code"></i>
+      </a>
+      <a href="/contact" class="navbar-links" data-tooltip="Contact" (click)="toggleNavbarExpansion()">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
     </div>
   </div>
   <button class="btn" id="ExpansionBtn" (click)="toggleNavbarExpansion()">
     <i class="bi bi-list"></i>
   </button>
 </section>
+
