@@ -7,4 +7,22 @@
 body {
   font-family: ReemKufiFun !important;
   text-space: 1rem;
+  min-height: 100vh;
+  background: url('/assets/home-cover-2.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.content{
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  padding-left: 150px;
+}
+
+.content h1{
+  text-align: center;
+}
+
+.content .cntainer{
+  background-color: black;
 }
