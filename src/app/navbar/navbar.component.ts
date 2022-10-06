@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavbarServiceService} from "./navbar-service.service";
 
 @Component({
   selector: 'app-navbar',
@@ -7,13 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  public expanded: boolean = true;
-
-  constructor() { }
+  constructor(public navbarService: NavbarServiceService) { }
 
   ngOnInit(): void {
   }
 
-  toggleNavbarExpansion = () => { this.expanded = !this.expanded; }
+  toggleNavbarExpansion = () => { this.navbarService.expanded = !this.navbarService.expanded; }
 
 }

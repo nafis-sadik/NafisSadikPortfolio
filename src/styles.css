@@ -16,7 +16,8 @@ body {
   min-height: 100vh;
   position: absolute;
   top: 0;
-  padding-left: 150px;
+  padding-left: 140px;
+  width: 100vw;
 }
 
 .content h1{
@@ -25,4 +26,8 @@ body {
 
 .content .cntainer{
   background-color: black;
+}
+
+.ml-navbar{
+  margin-left: 150px;
 }
