@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import {NavbarServiceService} from "./navbar-service.service";
+import {NavbarService} from "./navbar.service";
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-navbar-new',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public navbarService: NavbarServiceService) { }
+  constructor(public navbarService: NavbarService) { }
 
   ngOnInit(): void {
   }
 
   toggleNavbarExpansion = () => { this.navbarService.expanded = !this.navbarService.expanded; }
-
 }
